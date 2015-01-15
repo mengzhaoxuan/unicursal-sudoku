@@ -1,0 +1,179 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:ec="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
+    x:Class="SuDoKu.NewGame"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot 是包含所有页面内容的根网格-->
+	<!--LayoutRoot 是包含所有页面内容的根网格-->
+	<Grid x:Name="LayoutRoot" Background="Transparent" ShowGridLines="True" UseLayoutRounding="False">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="auto"/>
+			<RowDefinition Height="auto"/>
+		</Grid.RowDefinitions>
+
+		<!--TitlePanel 包含应用程序的名称和页标题-->
+		<StackPanel Grid.Row="0" Margin="0,17,0,28">
+			<TextBlock x:Name="Title" Margin="0,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="DarkGray" OpacityMask="#FFB82E2E" FontSize="96" FontFamily="Portable User Interface" >
+				<Run Text="新游戏"/>
+			</TextBlock>
+		</StackPanel>
+
+        <!--ContentPanel - 在此处放置其他内容-->
+		<Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+			<Grid x:Name="Grid" Margin="-2.516,34.58,2.516,0" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" VerticalAlignment="Top">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition/>
+				</Grid.RowDefinitions>
+				
+                
+                <!--row 1-->
+				<Button x:Name="b00" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="0" Grid.Column="0" Margin="-10"/>
+				<Button x:Name="b01" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="0" Grid.Column="1" Margin="-10"/>
+				<Button x:Name="b02" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="0" Grid.Column="2" Margin="-10"/>
+				<Button x:Name="b03" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="0" Grid.Column="3" Margin="-10"/>
+				<Button x:Name="b04" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="0" Grid.Column="4" Margin="-10"/>
+				<Button x:Name="b05" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="0" Grid.Column="5" Margin="-10"/>
+				<Button x:Name="b06" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="0" Grid.Column="6" Margin="-10"/>
+				<Button x:Name="b07" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="0" Grid.Column="7" Margin="-10"/>
+				<Button x:Name="b08" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="0" Grid.Column="8" Margin="-10"/>
+
+                <!--row 2-->
+				<Button x:Name="b10" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="1" Grid.Column="0" Margin="-10"/>
+				<Button x:Name="b11" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="1" Grid.Column="1" Margin="-10"/>
+				<Button x:Name="b12" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="1" Grid.Column="2" Margin="-10"/>
+				<Button x:Name="b13" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="1" Grid.Column="3" Margin="-10"/>
+				<Button x:Name="b14" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="1" Grid.Column="4" Margin="-10"/>
+				<Button x:Name="b15" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="1" Grid.Column="5" Margin="-10"/>
+				<Button x:Name="b16" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="1" Grid.Column="6" Margin="-10"/>
+				<Button x:Name="b17" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="1" Grid.Column="7" Margin="-10"/>
+				<Button x:Name="b18" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="1" Grid.Column="8" Margin="-10"/>
+
+                <!--row 3-->
+				<Button x:Name="b20" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="2" Grid.Column="0" Margin="-10"/>
+				<Button x:Name="b21" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="2" Grid.Column="1" Margin="-10"/>
+				<Button x:Name="b22" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="2" Grid.Column="2" Margin="-10"/>
+				<Button x:Name="b23" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="2" Grid.Column="3" Margin="-10"/>
+				<Button x:Name="b24" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="2" Grid.Column="4" Margin="-10"/>
+				<Button x:Name="b25" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="2" Grid.Column="5" Margin="-10"/>
+				<Button x:Name="b26" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="2" Grid.Column="6" Margin="-10"/>
+				<Button x:Name="b27" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="2" Grid.Column="7" Margin="-10"/>
+				<Button x:Name="b28" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="2" Grid.Column="8" Margin="-10"/>
+                <!--row 4-->
+				<Button x:Name="b30" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="3" Grid.Column="0" Margin="-10"/>
+				<Button x:Name="b31" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="3" Grid.Column="1" Margin="-10"/>
+				<Button x:Name="b32" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="3" Grid.Column="2" Margin="-10"/>
+				<Button x:Name="b33" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="3" Grid.Column="3" Margin="-10"/>
+				<Button x:Name="b34" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="3" Grid.Column="4" Margin="-10"/>
+				<Button x:Name="b35" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="3" Grid.Column="5" Margin="-10"/>
+				<Button x:Name="b36" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="3" Grid.Column="6" Margin="-10"/>
+				<Button x:Name="b37" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="3" Grid.Column="7" Margin="-10"/>
+				<Button x:Name="b38" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="3" Grid.Column="8" Margin="-10"/>
+                <!--row 5-->
+				<Button x:Name="b40" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="4" Grid.Column="0" Margin="-10"/>
+				<Button x:Name="b41" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="4" Grid.Column="1" Margin="-10"/>
+				<Button x:Name="b42" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="4" Grid.Column="2" Margin="-10"/>
+				<Button x:Name="b43" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="4" Grid.Column="3" Margin="-10"/>
+				<Button x:Name="b44" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="4" Grid.Column="4" Margin="-10"/>
+				<Button x:Name="b45" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="4" Grid.Column="5" Margin="-10"/>
+				<Button x:Name="b46" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="4" Grid.Column="6" Margin="-10"/>
+				<Button x:Name="b47" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="4" Grid.Column="7" Margin="-10"/>
+				<Button x:Name="b48" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="4" Grid.Column="8" Margin="-10"/>
+                <!--row 6-->
+				<Button x:Name="b50" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="5" Grid.Column="0" Margin="-10"/>
+				<Button x:Name="b51" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="5" Grid.Column="1" Margin="-10"/>
+				<Button x:Name="b52" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="5" Grid.Column="2" Margin="-10"/>
+				<Button x:Name="b53" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="5" Grid.Column="3" Margin="-10"/>
+				<Button x:Name="b54" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="5" Grid.Column="4" Margin="-10"/>
+				<Button x:Name="b55" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="5" Grid.Column="5" Margin="-10"/>
+				<Button x:Name="b56" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="5" Grid.Column="6" Margin="-10"/>
+				<Button x:Name="b57" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="5" Grid.Column="7" Margin="-10"/>
+				<Button x:Name="b58" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="5" Grid.Column="8" Margin="-10"/>
+                <!--row 7-->
+				<Button x:Name="b60" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="6" Grid.Column="0" Margin="-10"/>
+				<Button x:Name="b61" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="6" Grid.Column="1" Margin="-10"/>
+				<Button x:Name="b62" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="6" Grid.Column="2" Margin="-10"/>
+				<Button x:Name="b63" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="6" Grid.Column="3" Margin="-10"/>
+				<Button x:Name="b64" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="6" Grid.Column="4" Margin="-10"/>
+				<Button x:Name="b65" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="6" Grid.Column="5" Margin="-10"/>
+				<Button x:Name="b66" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="6" Grid.Column="6" Margin="-10"/>
+				<Button x:Name="b67" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="6" Grid.Column="7" Margin="-10"/>
+				<Button x:Name="b68" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="6" Grid.Column="8" Margin="-10"/>
+                <!--row 8-->
+				<Button x:Name="b70" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="7" Grid.Column="0" Margin="-10"/>
+				<Button x:Name="b71" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="7" Grid.Column="1" Margin="-10"/>
+				<Button x:Name="b72" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="7" Grid.Column="2" Margin="-10"/>
+				<Button x:Name="b73" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="7" Grid.Column="3" Margin="-10"/>
+				<Button x:Name="b74" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="7" Grid.Column="4" Margin="-10"/>
+				<Button x:Name="b75" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="7" Grid.Column="5" Margin="-10"/>
+				<Button x:Name="b76" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="7" Grid.Column="6" Margin="-10"/>
+				<Button x:Name="b77" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="7" Grid.Column="7" Margin="-10"/>
+				<Button x:Name="b78" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="7" Grid.Column="8" Margin="-10"/>
+                <!--row 9-->
+				<Button x:Name="b80" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="8" Grid.Column="0" Margin="-10"/>
+				<Button x:Name="b81" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="8" Grid.Column="1" Margin="-10"/>
+				<Button x:Name="b82" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="8" Grid.Column="2" Margin="-10"/>
+				<Button x:Name="b83" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="8" Grid.Column="3" Margin="-10"/>
+				<Button x:Name="b84" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="8" Grid.Column="4" Margin="-10"/>
+				<Button x:Name="b85" Click="Grid_Click" Background="DarkBlue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="8" Grid.Column="5" Margin="-10"/>
+				<Button x:Name="b86" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="8" Grid.Column="6" Margin="-10"/>
+				<Button x:Name="b87" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="8" Grid.Column="7" Margin="-10"/>
+				<Button x:Name="b88" Click="Grid_Click" Background="Blue" RenderTransformOrigin="4.991,24.511" BorderThickness="0" Padding="0,10" Grid.Row="8" Grid.Column="8" Margin="-10"/>
+			</Grid>
+
+			<Grid x:Name="SelectGrid" Margin="0,0,0,-80" VerticalAlignment="Bottom" Opacity="0.5">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<Button x:Name="b0" Click="Select_Click" Content="1" Grid.Column="0" HorizontalAlignment="Left" Margin="-10,0" VerticalAlignment="Top" />
+                <Button x:Name="b1" Click="Select_Click" Content="2" Grid.Column="1" HorizontalAlignment="Left" Margin="-10,0" VerticalAlignment="Top" />
+                <Button x:Name="b2" Click="Select_Click" Content="3" Grid.Column="2" HorizontalAlignment="Left" Margin="-10,0" VerticalAlignment="Top" />
+                <Button x:Name="b3" Click="Select_Click" Content="4" Grid.Column="3" HorizontalAlignment="Left" Margin="-10,0" VerticalAlignment="Top" />
+                <Button x:Name="b4" Click="Select_Click" Content="5" Grid.Column="4" HorizontalAlignment="Left" Margin="-10,0" VerticalAlignment="Top" />
+                <Button x:Name="b5" Click="Select_Click" Content="6" Grid.Column="5" HorizontalAlignment="Left" Margin="-10,0" VerticalAlignment="Top" />
+                <Button x:Name="b6" Click="Select_Click" Content="7" Grid.Column="6" HorizontalAlignment="Left" Margin="-10,0" VerticalAlignment="Top" />
+                <Button x:Name="b7" Click="Select_Click" Content="8" Grid.Column="7" HorizontalAlignment="Left" Margin="-10,0" VerticalAlignment="Top" />
+                <Button x:Name="b8" Click="Select_Click" Content="9" Grid.Column="8" HorizontalAlignment="Left" Margin="-10,0" VerticalAlignment="Top" />
+			</Grid>
+
+		</Grid>
+	</Grid>
+
+</phone:PhoneApplicationPage>
